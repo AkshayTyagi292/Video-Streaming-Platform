@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="summer.css">
+    <link rel="icon" href="../../Logo.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer</title>
+</head>
+<body>
+    <header>
+    <div class="toggle"><a href="../../../index.html"><img src="../../Logo.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Summer</span></h2>
+            <p>
+                Summer is the warmest season of the year, marked by longer days and higher temperatures. It is a time when people enjoy outdoor activities such as swimming, sunbathing, and barbecuing. Many plants and animals flourish during this season, and the landscape is often lush and vibrant. Summer vacations and road trips are popular during this time, and holidays such as Independence Day are celebrated.
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="summer.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

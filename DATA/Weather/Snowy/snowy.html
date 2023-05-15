@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="snowy.css">
+    <link rel="icon" href="../../Logo.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowy Weather</title>
+</head>
+<body>
+    <header>
+    <div class="toggle"><a href="../../../index.html"><img src="../../Logo.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Snowy Weather</span></h2>
+            <p>
+                
+Snowy weather is a meteorological condition where snowflakes fall from the sky, typically in cold climates during winter. The amount of snowfall can vary, ranging from a light dusting to heavy snowstorms. While it can be a beautiful sight, it can also pose hazards such as reduced visibility and slippery roads, increasing the risk of accidents. Therefore, it is important to take necessary precautions and measures to ensure safety and minimize disruption caused by snowy weather.
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="snowy.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>
