@@ -13,10 +13,11 @@ body {
 
 #header{
   background-color: #343a40;
-  max-width: 100%; /* set the maximum width of the container */
-  margin: 0 auto; /* center the container horizontally */
-  padding: 0 20px; /* add some padding to the left and right of the container */
-  box-sizing: border-box; /* include padding in the container's total width */
+  max-width: 100%;
+  height: 15%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 #top{
@@ -77,7 +78,7 @@ body {
 }
 
 .menu-toggle:hover {
-  background: #343a40;
+  background: #ff004f;
 }
 
 
@@ -113,7 +114,7 @@ body {
 .sidebar-nav li a:hover {
   text-decoration: none;
   color: #fff;
-  background: rgba(255, 255, 255, 0.2);
+  background: #ff004f;
 }
 
 .sidebar-nav li a:active,
